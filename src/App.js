@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import Home from './components/Home/Home';
 
-function App() {
-  return (
-    <div className="App">
-      App
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    console.log(this.props);
+    return (
+      <div>
+        App
+        <Home />
+      </div>
+    )
+  }
 }
-
-export default App;
